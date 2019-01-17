@@ -1,1 +1,4 @@
-`event.type` => Get event tiggered
+Get event tiggered:
+```javascript
+console.log(`event fired ${event.type}`); 
+```

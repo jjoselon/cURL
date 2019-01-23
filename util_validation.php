@@ -23,3 +23,9 @@ function rip_tags($string) {
     return $string; 
 
 }
+
+// validate if an string has not whitespaces at the beginning AND the end
+// https://stackoverflow.com/questions/37142882/php-check-if-string-contains-space-between-words-not-at-begining-or-end/37144463#37143044
+if (preg_match("/(^\s|\s$)/", $sCellValue) === 1) {
+  // string has whitespaces left or right
+}

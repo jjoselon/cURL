@@ -29,3 +29,9 @@ function rip_tags($string) {
 if (preg_match("/(^\s|\s$)/", $sCellValue) === 1) {
   // string has whitespaces left or right
 }
+
+// validate if all values in the array are empty
+// https://stackoverflow.com/questions/5040811/checking-if-all-the-array-items-are-empty-php
+if (strlen(implode($aRow)) == 0) {
+   echo "all values of the array are empty";
+}

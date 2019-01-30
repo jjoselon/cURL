@@ -17,5 +17,5 @@ $('#sltControl').html(`<option value='backendValue'>frontendValue</option>`)
 
 # Setter selected option to a select control
 ```javascript
-$(`#sltControl option[value='gg']`).prop('selected', true);
+$(`#sltControl`).prop('selectedIndex', 0);
 ```

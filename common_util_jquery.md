@@ -14,3 +14,8 @@ $('#sltControl option').each(function() {
 ```javascript
 $('#sltControl').html(`<option value='backendValue'>frontendValue</option>`)
 ```
+
+# Setter selected option to a select control
+```javascript
+$('#sltControl option[value='gg']").prop('selected', true);
+```

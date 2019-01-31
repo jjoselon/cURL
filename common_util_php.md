@@ -5,8 +5,8 @@
 echo $_POST["ANYTHING"] ?? "La variable es nula o no existe";
 ```
 
-# Operador ternario (shortcut)
-**Podemos saltar el segundo parametro si este es igual al primero**
+# Operador ternario (shortcut) [link](https://lornajane.net/posts/2015/new-in-php-7-null-coalesce-operator)
+**Podemos saltar el segundo parametro si este es igual al primero** 
 ```php
 $foo = "bar";
 echo $foo ? $foo : "no exits";

@@ -5,7 +5,7 @@
 echo $_POST["ANYTHING"] ?? "La variable es nula o no existe";
 ```
 
-# Operador ternario accesoso rapido
+# Operador ternario (shortcut)
 **Podemos saltar el segundo parametro si este es igual al primero**
 ```php
 $foo = "bar";

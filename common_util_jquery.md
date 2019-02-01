@@ -19,3 +19,12 @@ $('#sltControl').html(`<option value='backendValue'>frontendValue</option>`)
 ```javascript
 $(`#sltControl`).prop('selectedIndex', 0);
 ```
+
+# Show|hide element 
+```javascript
+if ($(element).is(":visible")) {
+  $(element).hide("fast");
+} else {
+  $(element).show("fast");
+}
+```

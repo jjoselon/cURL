@@ -1,0 +1,6 @@
+C:\Users\Administrador\Documents\ArreglosTaller4\ArreglosTaller4\bin\Release\ArreglosTaller4.exe.config
+C:\Users\Administrador\Documents\ArreglosTaller4\ArreglosTaller4\bin\Release\ArreglosTaller4.exe
+C:\Users\Administrador\Documents\ArreglosTaller4\ArreglosTaller4\bin\Release\ArreglosTaller4.pdb
+C:\Users\Administrador\Documents\ArreglosTaller4\ArreglosTaller4\obj\Release\ArreglosTaller4.csprojResolveAssemblyReference.cache
+C:\Users\Administrador\Documents\ArreglosTaller4\ArreglosTaller4\obj\Release\ArreglosTaller4.exe
+C:\Users\Administrador\Documents\ArreglosTaller4\ArreglosTaller4\obj\Release\ArreglosTaller4.pdb

@@ -1,6 +1,0 @@
-C:\Users\Administrador\Documents\ArreglosTaller4\ArreglosTaller4\bin\Debug\ArreglosTaller4.exe.config
-C:\Users\Administrador\Documents\ArreglosTaller4\ArreglosTaller4\bin\Debug\ArreglosTaller4.exe
-C:\Users\Administrador\Documents\ArreglosTaller4\ArreglosTaller4\bin\Debug\ArreglosTaller4.pdb
-C:\Users\Administrador\Documents\ArreglosTaller4\ArreglosTaller4\obj\Debug\ArreglosTaller4.exe
-C:\Users\Administrador\Documents\ArreglosTaller4\ArreglosTaller4\obj\Debug\ArreglosTaller4.pdb
-C:\Users\Administrador\Documents\ArreglosTaller4\ArreglosTaller4\obj\Debug\ArreglosTaller4.csprojResolveAssemblyReference.cache

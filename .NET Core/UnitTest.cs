@@ -1,3 +1,6 @@
+// Cree siempre inicialmente una prueba que resulte fallida para comprobar la lógica de la prueba. 
+// Después de confirmar que la prueba falla, ajuste la aserción para permitir que se supere la prueba.
+
 using Microsoft.VisualStudio.TestTools.UnitTesting; // Namespace para pruebas unitarias
 
 namespace StringLibreriaTest

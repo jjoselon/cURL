@@ -10,4 +10,9 @@ php artisan route:list
 ```console
 php artisan make:controller NameController
 ```
+**Crear un controlador con recursos (actions)**
+```console
+php artisan make:controller --resource NameController
+```
+
 

@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jjose\\Documents\\LibreriaDeClases\\Constructores\\ConstructoresEstaticos.csproj",
+      "projectUniqueName": "C:\\Users\\jjose\\Documents\\temp\\cURL\\Visual Studio\\LibreriaDeClases\\Constructores\\ConstructoresEstaticos.csproj",
       "projectName": "ConstructoresEstaticos",
-      "projectPath": "C:\\Users\\jjose\\Documents\\LibreriaDeClases\\Constructores\\ConstructoresEstaticos.csproj",
+      "projectPath": "C:\\Users\\jjose\\Documents\\temp\\cURL\\Visual Studio\\LibreriaDeClases\\Constructores\\ConstructoresEstaticos.csproj",
       "packagesPath": "C:\\Users\\jjose\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jjose\\Documents\\LibreriaDeClases\\Constructores\\obj\\",
+      "outputPath": "C:\\Users\\jjose\\Documents\\temp\\cURL\\Visual Studio\\LibreriaDeClases\\Constructores\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jjose\\Documents\\LibreriaDeClases\\CSharp6\\CSharp6.csproj",
+      "projectUniqueName": "C:\\Users\\jjose\\Documents\\temp\\cURL\\Visual Studio\\LibreriaDeClases\\CSharp6\\CSharp6.csproj",
       "projectName": "CSharp6",
-      "projectPath": "C:\\Users\\jjose\\Documents\\LibreriaDeClases\\CSharp6\\CSharp6.csproj",
+      "projectPath": "C:\\Users\\jjose\\Documents\\temp\\cURL\\Visual Studio\\LibreriaDeClases\\CSharp6\\CSharp6.csproj",
       "packagesPath": "C:\\Users\\jjose\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jjose\\Documents\\LibreriaDeClases\\CSharp6\\obj\\",
+      "outputPath": "C:\\Users\\jjose\\Documents\\temp\\cURL\\Visual Studio\\LibreriaDeClases\\CSharp6\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

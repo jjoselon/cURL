@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jjose\\Documents\\LibreriaDeClases\\Strings\\Strings.csproj",
+      "projectUniqueName": "C:\\Users\\jjose\\Documents\\temp\\cURL\\Visual Studio\\LibreriaDeClases\\Strings\\Strings.csproj",
       "projectName": "Strings",
-      "projectPath": "C:\\Users\\jjose\\Documents\\LibreriaDeClases\\Strings\\Strings.csproj",
+      "projectPath": "C:\\Users\\jjose\\Documents\\temp\\cURL\\Visual Studio\\LibreriaDeClases\\Strings\\Strings.csproj",
       "packagesPath": "C:\\Users\\jjose\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jjose\\Documents\\LibreriaDeClases\\Strings\\obj\\",
+      "outputPath": "C:\\Users\\jjose\\Documents\\temp\\cURL\\Visual Studio\\LibreriaDeClases\\Strings\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -12947,11 +12947,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jjose\\Documents\\LibreriaDeClases\\MVCapplicacion\\MVCapplicacion.csproj",
+      "projectUniqueName": "C:\\Users\\jjose\\Documents\\temp\\cURL\\Visual Studio\\LibreriaDeClases\\MVCapplicacion\\MVCapplicacion.csproj",
       "projectName": "MVCapplicacion",
-      "projectPath": "C:\\Users\\jjose\\Documents\\LibreriaDeClases\\MVCapplicacion\\MVCapplicacion.csproj",
+      "projectPath": "C:\\Users\\jjose\\Documents\\temp\\cURL\\Visual Studio\\LibreriaDeClases\\MVCapplicacion\\MVCapplicacion.csproj",
       "packagesPath": "C:\\Users\\jjose\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jjose\\Documents\\LibreriaDeClases\\MVCapplicacion\\obj\\",
+      "outputPath": "C:\\Users\\jjose\\Documents\\temp\\cURL\\Visual Studio\\LibreriaDeClases\\MVCapplicacion\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

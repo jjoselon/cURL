@@ -12,16 +12,53 @@ namespace MVCapplicacion.Controllers
     public class BinnaclesController : Controller
     {
         private readonly MVCapplicacionContext _context;
-
+        
         public BinnaclesController(MVCapplicacionContext context)
         {
             _context = context;
         }
 
-        // GET: Binnacles
-        public async Task<IActionResult> Index()
+        [HttpPost]
+        public string Index(string searchString, bool NotUsed)
         {
-            return View(await _context.Binnacle.ToListAsync());
+            return $"[HttpPost] with {searchString}";
+        }
+
+        // GET: Binnacles
+        public async Task<IActionResult> Index(string searchString)
+        {
+            IQueryable<int> IdsQuery = from b in _context.Binnacle
+                                          orderby b.PublishDate descending 
+                                          select b.Id;
+
+            var binnacle = from m in _context.Binnacle
+                            select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                binnacle.Where(s => s.Body.Contains(searchString));
+            }
+            /*
+             An unhandled exception occurred while processing the request.
+            NullReferenceException: Object reference not set to an instance of an object.
+            MVCapplicacion.Controllers.BinnaclesController.Index(string searchString) in BinnaclesController.cs, line 42
+             */
+            /*
+            var BinnacleVM = new BinnacleViewModel
+            {
+                BinnaclesIds = new SelectList(await IdsQuery.Distinct().ToListAsync()),
+                BinnaclesTypes = { "tarea", "investigar", "otro"},
+                Binnacles = await binnacle.ToListAsync()
+            };
+            */
+
+            var BinnacleVM = new BinnacleViewModel();
+
+            BinnacleVM.BinnaclesIds = new SelectList(await IdsQuery.Distinct().ToListAsync());
+            BinnacleVM.BinnaclesTypes = new List<string> { "tarea", "investigar", "otro" };
+            BinnacleVM.Binnacles = await binnacle.ToListAsync();
+
+            return View(BinnacleVM);
         }
 
         // GET: Binnacles/Details/5
@@ -53,7 +90,7 @@ namespace MVCapplicacion.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,Body,PublishDate")] Binnacle binnacle)
+        public async Task<IActionResult> Create([Bind("Id,Title,Body,PublishDate", "BinnacleType")] Binnacle binnacle)
         {
             if (ModelState.IsValid)
             {
@@ -85,13 +122,16 @@ namespace MVCapplicacion.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Body,PublishDate")] Binnacle binnacle)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Body,PublishDate", "BinnacleType")] Binnacle binnacle)
         {
             if (id != binnacle.Id)
             {
                 return NotFound();
             }
 
+            // see https://docs.microsoft.com/es-es/aspnet/core/tutorials/first-mvc-app/controller-methods-views?view=aspnetcore-2.2#processing-the-post-request
+            // The ModelState.IsValid method verifies that the data submitted in the form can be used to modify 
+            // (edit or update) a Binnacle object. If the data is valid, it's saved
             if (ModelState.IsValid)
             {
                 try

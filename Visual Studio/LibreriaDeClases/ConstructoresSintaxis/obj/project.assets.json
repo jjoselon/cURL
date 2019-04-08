@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jjose\\Documents\\LibreriaDeClases\\ConstructoresSintaxis\\ConstructoresSintaxis.csproj",
+      "projectUniqueName": "C:\\Users\\jjose\\Documents\\temp\\cURL\\Visual Studio\\LibreriaDeClases\\ConstructoresSintaxis\\ConstructoresSintaxis.csproj",
       "projectName": "ConstructoresSintaxis",
-      "projectPath": "C:\\Users\\jjose\\Documents\\LibreriaDeClases\\ConstructoresSintaxis\\ConstructoresSintaxis.csproj",
+      "projectPath": "C:\\Users\\jjose\\Documents\\temp\\cURL\\Visual Studio\\LibreriaDeClases\\ConstructoresSintaxis\\ConstructoresSintaxis.csproj",
       "packagesPath": "C:\\Users\\jjose\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jjose\\Documents\\LibreriaDeClases\\ConstructoresSintaxis\\obj\\",
+      "outputPath": "C:\\Users\\jjose\\Documents\\temp\\cURL\\Visual Studio\\LibreriaDeClases\\ConstructoresSintaxis\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

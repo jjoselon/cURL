@@ -11,9 +11,11 @@ $data_response = curl_exec($ch);
 
 // var_dump($data_response); // string JSON
 
+// convert JSON string to object php 
 $someObject = json_decode($data_response);
-
 //var_dump($someObject);
+$someArray = json_decode($data_response, true);
+//var_dump($someArray);
 
 echo "Squad Name" . $someObject->squadName . "<br>";
 

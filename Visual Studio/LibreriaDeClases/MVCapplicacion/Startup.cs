@@ -12,17 +12,20 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using MVCapplicacion.Models;
 
 namespace MVCapplicacion
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, ILoggerFactory logger)
         {
             Configuration = configuration;
+            LoggerFactory = logger;
         }
 
+        public ILoggerFactory LoggerFactory { get; set; }
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -38,6 +41,7 @@ namespace MVCapplicacion
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
+            // Add framework services.
             services.AddDbContext<MVCapplicacionContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("MVCapplicacionContext")));
         }
@@ -45,6 +49,8 @@ namespace MVCapplicacion
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            ILogger logger = LoggerFactory.CreateLogger("Errores 404");
+            
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -67,6 +73,7 @@ namespace MVCapplicacion
             });
             app.UseCookiePolicy();
 
+            // the UseMvc extension method adds Routing Middleware to the request pipeline and configures MVC as the default handler.
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
